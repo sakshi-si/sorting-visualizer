@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Sorting Visualizer</label>
+        <ul class="rightNav ">
+            <li class="dropdown"><button class="dropbtn">Sort</button>
+                <div class="dropdown-content">
+                    <button type="button" class="bubbleSort">Bubble Sort</button>
+                    <button type="button" class="selectionSort">Selection Sort</button>
+                    <button type="button" class="insertionSort">Insertion Sort</button>
+                    <button type="button" class="quickSort">Quick Sort</button>
+                    <button type="button" class="mergeSort">Merge Sort</button>
+                </div>
+            </li>
+            <li id="newArray">
+                <button type="button" class="newArray">New Array</button>
+                <button type="button" class="customArray">Custom Array</button>
+            </li>
+            <li>
+            <div class="col" id="input">
+            <li id="size">Size = 10
+                <div  id="arr_sz" value=10></div>
+            </li>
+            <li id="speed">Speed = 
+                <input class="input_bar" min="0" max="100" id="speed_input" value=10>
+            </li>
+            </div>
+            </li>
+        </ul>
+    </nav>
+    <div id="bars" class="flex-container"></div>
+    
+    <div  class="time_taken" > 
+        Time = &#160; <p id="test">  __</p>
+    </div>
+    <script src="js_files/sorting.js"></script>
+    <script src="js_files/bubble.js"></script>
+    <script src="js_files/insertion.js"></script>
+    <script src="js_files/merge.js"></script>
+    <script src="js_files/quick.js"></script>
+    <script src="js_files/selection.js"></script>
+</body>
+
+</html>
